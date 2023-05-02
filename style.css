@@ -18,23 +18,33 @@ a {
     text-decoration: none;
 }
 
+.allignement-titre-photo {
+    max-width: 1440px;
+    margin: auto;
+}
+
 /**Barre navigation**/
-nav div {
-    background-color: #eaeaea;
-    text-align: ;
+.recherche-form input {
+    border: none; 
+    padding: 1rem 1rem;
+    background: #eaeaea;
+    font-size: 16px;
+    font-weight: bold;
+    color: #353535;
+}
+
+.recherche-form i {
+    display: flex;
+}
+
+.recherche-form {
     display: flex;
     justify-content: center;
-    color: #353535;
-    font-size: 13px;
-}
-
-.nav-icon {
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    background: #eaeaea;
 }
 
-nav div i {
+nav form i {
     font-size: 1rem;
 }
 
@@ -42,20 +52,21 @@ nav div i {
 .explore {
     text-align: center;
     background-color: #f6f6f6;
-    height: 300px;
+    height: 250px;
     padding-top: 1rem;
 }
 
 .explore h1 {
     margin-top: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1;
 }
 
 .explore p {
     font-size: 1rem;
 }
 
-.explore button {
+.bouton {
+    display: inline-block;
     border: none;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
@@ -67,20 +78,21 @@ nav div i {
     font-weight: 500;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transition: all 200ms;  /**Créer transition sur le bouton (effet au survole)**/
+    padding
 }
 
-.explore button:hover {
+.bouton:hover {
     transform: scale(1.03);
     opacity: 0.9;
+    cursor: pointer;
+    transition: all 200ms
 }
 /**Fonctionnement**/
 
 .div-fonc {
     background-color: white;
-    padding-left: 1rem;
     padding-bottom: 20px;
 }
-
 
 .div-fonc li {
     background-color: #f6f6f6;
@@ -89,6 +101,7 @@ nav div i {
     border-radius: 20px;
     width: 70%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
 }
 
 .div-fonc i {
@@ -118,8 +131,7 @@ section h2 {
 }
 
 .restaurant {
-    background-color: #eaeaea;
-    height: 1252px;
+    background-color: #f6f6f6;
 }
 
 .carte-restau img {
@@ -151,8 +163,6 @@ section h2 {
 
 /**Footer**/
 footer {
-    width: 100%;
-    height: 180px;
     background-color: #353535;
     padding-bottom: 1rem;
 }
@@ -185,6 +195,64 @@ footer i {
     padding-right:1rem ;
 }
 
-@media (max-width:1440px) {
+@media (min-width:1440px) {
     
+    /**Explorer**/
+    .explore h1 {
+        font-size: 40px;
+    }
+
+    .explore p {
+        font-size: 18px;
+    }
+
+    .bouton {
+        width: 15%;
+        margin-top: 30px;
+    }
+
+    /**Fonctionnement**/
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:3rem;
+    }
+
+    .div-fonc h2 {
+    }
+
+    .div-fonc ol {
+        width:auto;
+    }
+
+    .div-fonc li {
+        margin: none;
+        width: calc(30% - 0px);
+    }
+
+    /**Resturant**/
+    .restaurant h2 {
+    }
+
+    .restaurant {
+        margin-bottom: auto;
+    }
+
+    .grille-restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .carte-restau {
+    }
+
+    .footer-form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
 }

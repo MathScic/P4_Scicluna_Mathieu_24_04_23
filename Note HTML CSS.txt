@@ -1,0 +1,5 @@
+p4 
+
+-rajout max witdh section "restaurant", Fonctionnemetn... sauf footer et header. 
+ce ref au p3 
+

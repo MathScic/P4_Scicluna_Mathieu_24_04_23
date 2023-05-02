@@ -1,0 +1,7 @@
+git apprendre 
+
+- git add . permet enregistrer fichier 
+
+- git commit-m creer le commit
+
+-git push origin main permet de mettre sur le serveur git hub.  
