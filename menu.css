@@ -17,13 +17,34 @@ main h1 {
     text-align: center;
     font-size: 28px;
     margin: auto;
-    margin-top: -2rem;
-    background:;
+}
+
+main {
+    position: relative;
+    margin-top: -3rem;
 }
 
 .menu {
-    background: red;
+    background: #eaeaea;
     border-radius: 1rem 1rem 0 0;
-    margin-top: ;
 }
 
+.div-plat {
+    margin: 0rem 30rem;
+    background: #ffffff;
+    border-radius: 15px;
+    line-height: none;
+}
+
+.div-plat h3 {
+    font-size: 15px;
+    margin-left: 1rem;
+}
+
+.div-plat p {
+    font-size: 14px;
+}
+
+.div-plat span {
+    font-weight: 600;
+}
