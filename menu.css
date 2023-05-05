@@ -21,19 +21,24 @@ main h1 {
 
 main {
     position: relative;
-    margin-top: -3rem;
 }
 
 .menu {
     background: #eaeaea;
     border-radius: 1rem 1rem 0 0;
+    max-width: 70%;
+    margin: auto;
+    margin-top: -2rem;
 }
 
 .div-plat {
-    margin: 0rem 30rem;
     background: #ffffff;
     border-radius: 15px;
     line-height: none;
+    padding-bottom: 3px;
+    background: white;
+    max-width: 60%;
+    margin: auto;
 }
 
 .div-plat h3 {
