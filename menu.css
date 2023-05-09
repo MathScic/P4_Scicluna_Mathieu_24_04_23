@@ -19,6 +19,11 @@ main h1 {
     margin: auto;
 }
 
+section h2 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
 main {
     position: relative;
 }
@@ -39,17 +44,27 @@ main {
     background: white;
     max-width: 60%;
     margin: auto;
+    margin-top: 1rem;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 
 .div-plat h3 {
     font-size: 15px;
+    margin: auto;
     margin-left: 1rem;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .div-plat p {
     font-size: 14px;
+    margin: auto;
 }
 
 .div-plat span {
     font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
