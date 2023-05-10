@@ -77,15 +77,13 @@ nav form i {
     font-size: 15px;
     font-weight: 500;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    transition: all 200ms;  /**Créer transition sur le bouton (effet au survole)**/
-
 }
 
 .bouton:hover {
     transform: scale(1.03);
     opacity: 0.9;
     cursor: pointer;
-    transition: all 200ms
+    transition: all 200ms  /**Créer transition sur le bouton (effet au survole)**/
 }
 /**Fonctionnement**/
 
@@ -124,8 +122,29 @@ nav form i {
     color: #353535;
 }
 
+.steps {
+    counter-reset: counter;
+    list-style: none;
+}
+
+.steps li {
+    counter-increment: counter;
+    position: relative;
+}
+
+.steps li::before {
+    background: #9356DC;
+    color: white;
+    content: counter(counter);
+    position: absolute;
+    left: -0.5em;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+}
+
 /**Restaurants**/
-section h2 {
+.allignement-titre-photo h2 {
     margin: 2rem;
     padding-top: 2rem;
 }
@@ -138,6 +157,7 @@ section h2 {
     width: 100%;
     height: 175px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .carte-restau {
@@ -155,7 +175,7 @@ section h2 {
     cursor: pointer;
 }
 
-.carte-restau h3, p {
+.carte-restau h3, .carte-restau p {
     padding-left: 1rem;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -171,7 +191,6 @@ footer p {
     font-size: 20px;
     color: #FFFF;
     font-family: 'shrikhand', sans-serif;
-    padding: 1.5rem;
     padding-bottom: 0.5rem;
     
 }
