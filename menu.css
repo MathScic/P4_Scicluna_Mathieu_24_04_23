@@ -49,10 +49,19 @@ main {
 
 .menu {
     background: #eaeaea;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
     max-width: 70%;
     margin: auto;
     margin-top: -2rem;
+}
+
+@keyframes apparence {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .div-plat {
@@ -66,6 +75,7 @@ main {
     margin-top: 1rem;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     padding: 1rem;
+    animation: apparence 1s;
 }
 
 .div-plat h3 {
@@ -130,12 +140,25 @@ main .bouton-commander {
         border-radius: 40px;
     }
 
+    h1 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
     .align-titre h2 {
         margin-left: 1rem;
     }
 
     .div-plat {
         max-width: 85%;
+    }
+
+    article:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 200ms;
     }
 
     .bouton-commander {

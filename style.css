@@ -58,7 +58,6 @@ nav form i {
 
 .explore h1 {
     margin-top: 1.5rem;
-    font-size: 1;
 }
 
 .explore p {
@@ -77,6 +76,7 @@ nav form i {
     font-size: 15px;
     font-weight: 500;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 .bouton:hover {
@@ -85,6 +85,7 @@ nav form i {
     cursor: pointer;
     transition: all 200ms  /**Créer transition sur le bouton (effet au survole)**/
 }
+
 /**Fonctionnement**/
 
 .div-fonc {
@@ -150,7 +151,8 @@ nav form i {
 }
 
 .restaurant {
-    background-color: #f6f6f6;
+    background-color: red;
+    padding-bottom: ;
 }
 
 .carte-restau img {
@@ -181,6 +183,13 @@ nav form i {
     margin-bottom: 5px;
 }
 
+.carte-restau span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2rem;
+    margin-right: 1rem;
+}
+
 /**Footer**/
 footer {
     background-color: #353535;
@@ -191,8 +200,8 @@ footer p {
     font-size: 20px;
     color: #FFFF;
     font-family: 'shrikhand', sans-serif;
-    padding-bottom: 0.5rem;
-    
+    padding-left: 1.5rem;
+    padding-top: 1rem;
 }
 
 footer a {
@@ -246,7 +255,6 @@ footer i {
     }
 
     .div-fonc li {
-        margin: none;
         width: calc(30% - 0px);
     }
 
