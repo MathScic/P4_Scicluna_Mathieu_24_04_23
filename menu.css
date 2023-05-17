@@ -37,6 +37,17 @@ main {
     margin-top: 2rem;
 } 
 
+.align-titre span i {
+    margin-left: 3rem;
+}
+
+.align-titre span i:hover {
+    color: #9356DC;
+    transform: scale(1.02);
+    transition: all 200ms;
+    cursor: pointer;
+}
+
 .menu h2::before {
     content:"" ;
     width: 30px;

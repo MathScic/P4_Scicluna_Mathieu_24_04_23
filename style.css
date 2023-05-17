@@ -183,11 +183,18 @@ nav form i {
     margin-bottom: 5px;
 }
 
-.carte-restau span {
+.carte-restau span i {
     display: flex;
     justify-content: flex-end;
     margin-top: -2rem;
     margin-right: 1rem;
+    font-size: 25px;
+}
+
+.carte-restau span i:hover {
+    color: #9356DC;
+    transform: scale(1.02);
+    transition: all 200ms;
 }
 
 /**Footer**/
