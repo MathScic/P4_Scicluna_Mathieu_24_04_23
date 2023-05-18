@@ -37,14 +37,25 @@ main {
     margin-top: 2rem;
 } 
 
+@keyframes heartFavorite {
+    from {
+        background: transparent;
+    }
+
+    to {
+        color: #9356DC;
+        background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        transform: scale(1.02);
+        transition: all 200ms;
+    }
+}
 .align-titre span i {
-    margin-left: 3rem;
+    margin-left: 6rem;
+    font-size: 20px;
 }
 
 .align-titre span i:hover {
-    color: #9356DC;
-    transform: scale(1.02);
-    transition: all 200ms;
+    animation: heartFavorite 1s ;
     cursor: pointer;
 }
 

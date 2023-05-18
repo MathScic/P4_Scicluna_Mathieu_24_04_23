@@ -151,7 +151,7 @@ nav form i {
 }
 
 .restaurant {
-    background-color: red;
+    background-color: #eaeaea;
     padding-bottom: ;
 }
 
@@ -168,12 +168,11 @@ nav form i {
     height: 250px;
     border-radius: 20px;
     margin: 1.5rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    
 }
 
 .carte-restau:hover {
-    transform: scale(1.02);
-    transition: all 200ms;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
@@ -191,10 +190,18 @@ nav form i {
     font-size: 25px;
 }
 
+@keyframes heartColor {
+    from {
+        background: transparent;
+    }
+
+    to {
+        background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    }
+}
+
 .carte-restau span i:hover {
-    color: #9356DC;
-    transform: scale(1.02);
-    transition: all 200ms;
+    animation: heartColor 1s;
 }
 
 /**Footer**/
