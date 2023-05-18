@@ -34,7 +34,7 @@ main {
 }
 
 .align-titre h2 {
-    margin-left: 16rem;
+    margin-left: 12rem;
     margin-top: 2rem;
 } 
 
@@ -151,9 +151,14 @@ main .bouton-commander {
     cursor: pointer;
 }
 
+
+.space {
+    padding-bottom: 2rem;
+}
+
 .space-top {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    
 }
 
 @media (max-width: 768px) {
@@ -162,14 +167,10 @@ main .bouton-commander {
     /**Menu**/
     .menu {
         max-width: 100%;
-        border-radius: 40px;
     }
 
     h1 {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 1rem;
-        padding-top: 1rem;
+
     }
 
     .align-titre h2 {
@@ -198,7 +199,6 @@ main .bouton-commander {
     }
 
     footer p {
-        margin-left: 1.5rem;
         padding-top: 1rem;
     }
 }

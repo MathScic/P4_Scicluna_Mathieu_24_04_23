@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;1,100&family=Shrikhand&display=swap');
 
+.loader {
+    background: linear-gradient(#9356DC, #FF79DA, #99e2d0);
+    width: 100px;
+    height: 100px;
+    border-left: 5px solid #99E2D0;
+    border-right: 5px solid #FF79DA;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
@@ -30,7 +57,7 @@ a {
     background: #eaeaea;
     font-size: 16px;
     font-weight: bold;
-    color: #353535;
+    color: #353535
 }
 
 .recherche-form i {
@@ -111,16 +138,6 @@ nav form i {
 
 .div-fonc i:hover {
     color: #9356DC;
-    cursor: pointer;
-    transform: scale(1.02);
-}
-
-.div-fonc li:hover {
-    transform: scale(1.02);
-    transition: all 200ms;
-    cursor: pointer;
-    background-color: #f2eafb;
-    color: #353535;
 }
 
 .steps {
@@ -145,6 +162,16 @@ nav form i {
 }
 
 /**Restaurants**/
+.badge {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .allignement-titre-photo h2 {
     margin: 2rem;
     padding-top: 2rem;
@@ -167,8 +194,7 @@ nav form i {
     width: auto;
     height: 250px;
     border-radius: 20px;
-    margin: 1.5rem;
-    
+    position: relative;
 }
 
 .carte-restau:hover {
@@ -190,6 +216,15 @@ nav form i {
     font-size: 25px;
 }
 
+.grille-restaurant {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
 @keyframes heartColor {
     from {
         background: transparent;
@@ -207,7 +242,6 @@ nav form i {
 /**Footer**/
 footer {
     background-color: #353535;
-    padding-bottom: 1rem;
 }
 
 footer p {
@@ -215,6 +249,7 @@ footer p {
     color: #FFFF;
     font-family: 'shrikhand', sans-serif;
     padding-left: 1.5rem;
+    margin-top: 0;
     padding-top: 1rem;
 }
 
@@ -237,7 +272,7 @@ footer i {
     padding-right:1rem ;
 }
 
-@media (min-width:1440px) {
+@media (min-width:1024px) {
     
     /**Explorer**/
     .explore h1 {
@@ -283,7 +318,7 @@ footer i {
     .grille-restaurant {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 3rem;
     }
 
     .carte-restau {
@@ -295,5 +330,8 @@ footer i {
         align-items: center;
         margin-right: 1rem;
     }
+}
 
+@media (min-width:768px) {
+    
 }
