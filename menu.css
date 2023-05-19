@@ -31,6 +31,7 @@ main {
     font-weight: 200;
     position: relative;
     text-transform: uppercase;
+    margin-left: 2rem;
 }
 
 .align-titre h2 {
@@ -46,8 +47,6 @@ main {
     to {
         color: #9356DC;
         background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-        transform: scale(1.02);
-        transition: all 200ms;
     }
 }
 .align-titre span i {
@@ -101,7 +100,35 @@ main {
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     animation: apparence 1s;
+    position: relative;
+    overflow: hidden;
 }
+
+/**Check-Price**/
+.price-check {
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    display: flex;
+    height: 100%;
+    transition: right 0.5s ease-in;
+    color: white;
+}
+
+.div-plat:hover .price-check {
+    right: 0%;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background: #99E2D0;
+    border: 1px solid transparent;
+}
+/** **/
 
 .div-plat h3 {
     font-size: 15px;

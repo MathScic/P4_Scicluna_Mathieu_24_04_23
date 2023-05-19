@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;1,100&family=Shrikhand&display=swap');
 
 .loader {
-    background: linear-gradient(#9356DC, #FF79DA, #99e2d0);
     width: 100px;
     height: 100px;
     border-left: 5px solid #99E2D0;
@@ -13,17 +12,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    -webkit-animation: spin 2s linear infinite;
+    -webkit-animation: spin 3s linear forwards;
 }
 
 
 @keyframes spin {
     from {
         transform: rotate(0deg);
+        opacity: 1;
     }
 
     to {
         transform: rotate(360deg);
+        opacity: 0;
     }
 }
 
@@ -93,12 +94,12 @@ nav form i {
 
 .bouton {
     display: inline-block;
-    border: none;
+    border: transparent;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
     margin-top: 1rem;
     border-radius: 30px;
-    width: 60%;
+    width: 40%;
     height: 35px;
     font-size: 15px;
     font-weight: 500;
@@ -170,6 +171,7 @@ nav form i {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .allignement-titre-photo h2 {
@@ -179,7 +181,6 @@ nav form i {
 
 .restaurant {
     background-color: #eaeaea;
-    padding-bottom: ;
 }
 
 .carte-restau img {
@@ -332,6 +333,27 @@ footer i {
     }
 }
 
-@media (min-width:768px) {
-    
+@media (max-width:768px) {
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:3rem;
+    }
+
+    .bouton {
+        width: 40%;
+        margin-top: 30px;
+    }
+
+    .grille-restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .div-fonc li {
+        width: calc(20% - 10px);
+    }
+
 }
