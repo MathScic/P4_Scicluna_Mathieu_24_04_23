@@ -1,0 +1,80 @@
+- div-fonc   et restaurant, rajout div            OK 
+
+- grille restau, display grid avec 2 colonnes              OK 
+
+- carte restau, retirer width 490px               OK 
+
+- footer-form, mettre justify content flex end             OK 
+
+-  rajout balise a au header                      OK 
+
+- rajout input partie nav de barre nav              OK 
+
+- rajout des alt dans la partie restaurant           OK 
+
+- faire page restaurant 
+
+
+
+- object fit sur .alignement img      OK 
+
+-  reset CSS ou maargin 0 général         OK 
+
+
+
+18/05/23
+ 
+- Prob Input pas au centre 
+
+- Version mob espace blanc entre footer et partie restaurant      OK 
+
+- Explorer restaurant a mettre au centre du bouton         OK 
+ 
+-alignement de la fléches "retour en ariere" au titre ohmyfood 
+
+- re nommer les menu avec le nom des restaus            OK 
+
+- créer dossier assets. avec dedans images.  	OK 
+
+- retirer hover partie fonctionnement.          OK 
+
+- titre menu sur 2 lignes en mobile         OK
+
+-configurer bouton contact avec boite mail. 	pas dans le débrief 
+
+- sens dégradé a refaire (mauvais sens) sur bouton. 
+
+- faire anim coeur (utilisé 2 icones + fa-stack2x)
+
+- réduire médiaqueries a 1024px	OK 
+
+- margin sur card rend cliquable les contours	OK 
+
+- padding-top en trop sur le footer qui empeche allignement	OK 
+
+- faire animation Loader	OK (mettre juste 3sec) 	OK 
+
+- ajout baniere nouveau sur les deux premiers menu page acceuille.	OK 
+
+-ajouter check-price animation au menu html et css 		OK 
+
+
+ mentorat 24/05 : 
+
+- Prob avec h2 sur les menus 
+
+- prob animation background coeur
+
+- sens dégradé  couleurs 
+
+- animation menu 1 par 1 
+
+- alignement fmeche retour en arière pas aligner au titre OHMYFOOD 
+
+- animation price check qui cache le prix quand elle apparait. 
+
+- prob animation page accueil (pas de background) 
+ 
+
+
+

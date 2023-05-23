@@ -334,26 +334,29 @@ footer i {
 }
 
 @media (max-width:768px) {
+    .recherche-form {
+
+    }
+
     .steps {
-        display: flex;
+        
         flex-direction: row;
         justify-content: flex-start;
         gap:3rem;
     }
 
     .bouton {
-        width: 40%;
-        margin-top: 30px;
+        width: 55%;
+        font-size: 13px;
+        font-weight: bold;
     }
 
     .grille-restaurant {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
 
     .div-fonc li {
-        width: calc(20% - 10px);
+        
     }
 
 }
