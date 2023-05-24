@@ -61,7 +61,7 @@
 
  mentorat 24/05 : 
 
-- Prob avec h2 sur les menus 
+- Prob avec h2 sur les menus version dekstop, laptop et mobile    ok 
 
 - prob animation background coeur
 
@@ -69,11 +69,30 @@
 
 - animation menu 1 par 1 
 
-- alignement fmeche retour en arière pas aligner au titre OHMYFOOD 
+- alignement fmeche retour en arière pas aligner au titre OHMYFOOD      OK 
 
-- animation price check qui cache le prix quand elle apparait. 
+- animation price check qui cache le prix quand elle apparait.      OK
 
-- prob animation page accueil (pas de background) 
+- prob animation page accueil (pas de background)       OK 
+
+
+
+24/05 
+ -rajhout max width 60% + matrgin auto sur h2 
+- header restau rajouter display flex  + align items center et rajouter 
+	margin auto sur l image du header dans page restau 
+- retirer displlay sur le lien du header page restau 
+
+- retirer key frame remplacer par transition sur hover 
+
+- anim page acceuil creer une div aec width 100% height 200% + back ground = couleur + opacity = 20% + 
+	mettre loader dedans 
+
+-anim bouton rajout box shaddow 
+
+-anim menu, anim-delay sur chaque partie 0- 0.1- 0.2 sur 
+
+- menu  css, mettre menu sur la gauche 
  
 
 
