@@ -71,7 +71,7 @@ main {
 /***/
 
 .align-titre span i {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 0.7rem;
     font-size: 20px;
 }
@@ -211,7 +211,6 @@ main .bouton-commander {
 
 @media (min-width:1024px) {
     .menu h2 {
-        margin: auto;
     }
 }
 
@@ -226,18 +225,17 @@ main .bouton-commander {
     h1 {
         display: flex;
         justify-content: flex-start;
-        padding-left: 1rem;
+        padding-left: 3rem;
     }
 
     .align-titre h2 {
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
 
     .align-titre span i {
         display: flex;
         justify-content: flex-end;
         margin-top: 0.7rem;
-        margin-left: 6rem;
     }
 
     .div-plat {
