@@ -186,14 +186,13 @@ main .bouton-commander {
     height: 50px;
     font-size: 15px;
     font-weight: 500;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .bouton-commander:hover {
-    transform: scale(1.03);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     opacity: 0.9;
     transition: all 200ms;
     cursor: pointer;
@@ -224,8 +223,7 @@ main .bouton-commander {
 
     h1 {
         display: flex;
-        justify-content: flex-start;
-        padding-left: 3rem;
+        justify-content: space-around;
     }
 
     .align-titre h2 {
