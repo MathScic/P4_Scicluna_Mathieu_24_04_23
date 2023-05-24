@@ -78,17 +78,19 @@
 
 
 24/05 
- -rajhout max width 60% + matrgin auto sur h2 
+ -rajhout max width 60% + matrgin auto sur h2 	OK 
+
 - header restau rajouter display flex  + align items center et rajouter 
-	margin auto sur l image du header dans page restau 
-- retirer displlay sur le lien du header page restau 
+	margin auto sur l image du header dans page restau 		OK 
+
+- retirer displlay sur le lien du header page restau 		OK 
 
 - retirer key frame remplacer par transition sur hover 
 
 - anim page acceuil creer une div aec width 100% height 200% + back ground = couleur + opacity = 20% + 
 	mettre loader dedans 
 
--anim bouton rajout box shaddow 
+-anim bouton rajout box shaddow  au hover 
 
 -anim menu, anim-delay sur chaque partie 0- 0.1- 0.2 sur 
 

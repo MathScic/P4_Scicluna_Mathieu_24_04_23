@@ -7,10 +7,13 @@
 }
 
 /**HEADER**/
-header a {
+header {
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    align-items: center;
+}
+
+header img {
+    margin: auto;
 }
 
 /**MENU**/
@@ -31,6 +34,8 @@ main {
     font-weight: 200;
     position: relative;
     text-transform: uppercase;
+    max-width: 60%;
+    margin: auto;
 }
 
 .align-titre h2 {
@@ -46,6 +51,16 @@ main {
     opacity: 0;
     color: transparent;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.fa-heart {
+    position: absolute;
+}
+
+.coeur {
+    position: relative;
 }
 
 .coeur:hover .heartFavorite {
@@ -57,7 +72,7 @@ main {
 
 .align-titre span i {
     margin-left: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 0.7rem;
     font-size: 20px;
 }
 
@@ -196,7 +211,7 @@ main .bouton-commander {
 
 @media (min-width:1024px) {
     .menu h2 {
-        margin-left: 8rem;
+        margin: auto;
     }
 }
 
@@ -209,7 +224,9 @@ main .bouton-commander {
     }
 
     h1 {
-
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
     }
 
     .align-titre h2 {
