@@ -70,16 +70,18 @@ main {
 
 /***/
 
-.align-titre span i {
-    margin-left: 1rem;
+/**Positionnement du coeur**/
+.align-titre span i {   
     margin-top: 0.7rem;
-    font-size: 20px;
+    font-size: 18px;
+    padding-right: 1rem;
 }
-
+/**/
 .align-titre span i:hover {
     animation: heartFavorite 1s ;
     cursor: pointer;
 }
+
 
 .menu h2::before {
     content:"" ;
@@ -238,6 +240,13 @@ main .bouton-commander {
 
     .div-plat {
         max-width: 85%;
+    }
+
+    .txt-plat {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     article:hover {
