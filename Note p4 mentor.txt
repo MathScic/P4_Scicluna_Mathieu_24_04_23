@@ -63,7 +63,7 @@
 
 - Prob avec h2 sur les menus version dekstop, laptop et mobile    ok 
 
-- prob animation background coeur
+- prob animation background coeur 	OK 
 
 - sens dégradé  couleurs 
 
@@ -96,6 +96,6 @@
 
 - menu  css, mettre nom restau sur la gauche 
  
-- input a centrer 	
+- input a centrer 	OK 
 
 

@@ -2,10 +2,25 @@
 
 .overlay {
     width: 100%;
-    height: 200%;
+    height: 100%;
     opacity: 100%;
     position: fixed;
+    background: #eaeaea;
+    animation: display 1s;    /**Overlay anim dure 1sec**/
+    animation-delay: 2s;  /**Pour qu'on commnce a masquer que l'overlay apres la fin de l'anim du loader**/
+    z-index: 1;    /**eviter element au dessus**/
+    animation-iteration-count: 1;      /**anim execute une seul fois**/
+    animation-fill-mode: both;       /**pour eviter répetition de l'anim **/ 
+}
 
+@keyframes display {
+    from {
+
+    }
+    to {
+        height: 0px;
+        opacity: 0;
+    }
 }
 
 .loader {
@@ -27,12 +42,11 @@
 @keyframes spin {
     from {
         transform: rotate(0deg);
-        opacity: 1;
     }
 
     to {
         transform: rotate(360deg);
-        opacity: 0
+        visibility: hidden;
     }
 }
 
