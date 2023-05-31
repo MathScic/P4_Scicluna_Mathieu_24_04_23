@@ -399,8 +399,8 @@ footer i {
         gap: 3rem;
     }
 
-    .div-fonc li {
-        
+    .steps li {
+        font-size: 14px;
     }
 
 }
