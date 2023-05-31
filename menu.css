@@ -17,10 +17,15 @@ header img {
 }
 
 /**MENU**/
+
+.coeur {
+    margin-left: 3rem;
+}
+
 .align-titre h1 {
     font-family: 'shrikhand', sans-serif;
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     margin: auto;
     padding-top: 2rem;
 }
@@ -41,6 +46,7 @@ main {
 .align-titre h2 {
     margin-top: 2rem;
     margin-left: 12rem;
+    padding-top: 10px;
 } 
 
 /**Coeur anim**/
@@ -231,7 +237,8 @@ main .bouton-commander {
 
     h1 {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 10px;
     }
 
     .align-titre h2 {
