@@ -50,7 +50,6 @@ main {
 } 
 
 /**Coeur anim**/
-
 .heartFavorite {
     background-clip: text;
     -webkit-background-clip: text;
@@ -134,6 +133,8 @@ main {
     overflow: hidden;
 }
 
+
+
 /**Check-Price**/
 .price-check {
     position: absolute;
@@ -159,11 +160,23 @@ main {
     background: #99E2D0;
     border: 1px solid transparent;
 }
+
+.space-checkbox {
+    display: flex;
+    flex-direction: column;
+    
+}
 /** **/
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .div-plat h3 {
     font-size: 15px;
-    margin: auto;
+    margin: 0 0 4px 0;
     margin-bottom: 5px;
 }
 
@@ -179,6 +192,7 @@ main {
 
 .txt-plat span {
     font-weight: bold;
+    font-size: 15px;
 }
 
 main .bouton-commander {
