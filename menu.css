@@ -43,6 +43,18 @@ main {
     padding-top: 2rem;
 }
 
+.menu h2::after {
+    content:"" ;
+    width: 30px;
+    height: 3px;
+    background: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   display: block;
+}
+
+
 .align-titre {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -89,16 +101,6 @@ main {
 }
 
 
-.menu h2::before {
-    content:"" ;
-    width: 30px;
-    height: 3px;
-    background: #99E2D0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-   
-}
 
 .menu {
     background: #eaeaea;
@@ -147,10 +149,6 @@ main {
     cursor: pointer;
 }
 
-.div-plat:hover .price-check {
-    right: 0%;
-}
-
 .check-container {
     display: flex;
     align-items: center;
@@ -159,6 +157,18 @@ main {
     height: 100%;
     background: #99E2D0;
     border: 1px solid transparent;
+}
+
+.div-plat:hover .price-check {
+    right: 0%;
+}
+
+.div-plat:hover .price {
+    margin-right: 12%;
+}
+
+.price:hover {
+    transition: right 0.5s;
 }
 
 .space-checkbox {
