@@ -27,7 +27,7 @@ header img {
     text-align: center;
     font-size: 25px;
     margin: auto;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 main {
@@ -39,13 +39,13 @@ main {
     font-weight: 200;
     position: relative;
     text-transform: uppercase;
-    
-    margin: auto;
+    margin-left: 12rem;
+    padding-top: 2rem;
 }
 
-.align-titre h2 {
+.align-titre {
     margin-top: 2rem;
-    margin-left: 12rem;
+    margin-left: 2rem;
     padding-top: 10px;
 } 
 
@@ -199,7 +199,8 @@ main .bouton-commander {
 }
 
 /**BOUTON**/
-.bouton-commander {
+
+.commander {
     display: inline-block;
     border: none;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -215,7 +216,7 @@ main .bouton-commander {
     align-items: center;
 }
 
-.bouton-commander:hover {
+.commander:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     opacity: 0.9;
     transition: all 200ms;
@@ -232,8 +233,9 @@ main .bouton-commander {
     
 }
 
-@media (min-width:1024px) {
+@media (max-width:1024px) {
     .menu h2 {
+        margin-left: 8rem;
     }
 }
 
@@ -246,17 +248,20 @@ main .bouton-commander {
     }
 
     .menu h2 {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 
     h1 {
         display: flex;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 10px 40px;
     }
 
     .align-titre h2 {
-       
+    }
+
+    .menu h2 ::before {
+        padding-left: 2rem;
     }
 
     .align-titre span i {
@@ -271,7 +276,6 @@ main .bouton-commander {
 
     /** 3 points a la fin de lignes  **/ 
     .txt-plat {
-        width: 280px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -291,3 +295,9 @@ main .bouton-commander {
         padding-top: 1rem;
     }
 } 
+
+@media (max-width: 320px) {
+    .menu h2 {
+        margin-left: 1rem;
+    }
+}
