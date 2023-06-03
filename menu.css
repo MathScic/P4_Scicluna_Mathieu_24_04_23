@@ -120,121 +120,72 @@ main {
     }
 }
 
+.price {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .div-plat {
-    background: #ffffff;
+    display: flex;
     border-radius: 15px;
-    padding-bottom: 3px;
     background: white;
     max-width: 60%;
     margin: auto;
     margin-top: 1rem;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     animation: apparence 1s;
-    position: relative;
     overflow: hidden;
 }
 
 
 
 /**Check-Price**/
-.price-check {
-    position: absolute;
-    right: -60px;
-    top: 0px;
-    display: flex;
-    height: 100%;
-    transition: right 0.5s ease-in;
-    color: white;
-    cursor: pointer;
+.div-plat:hover .check-container{
+    width: 50px;
 }
+
 
 .check-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 100%;
+    color: white;
+    width: 0px;
+    transition: width 1s;
     background: #99E2D0;
-    border: 1px solid transparent;
-}
-
-.div-plat:hover .price-check {
-    right: 0%;
-}
-
-.div-plat:hover .price {
-    margin-right: 12%;
-}
-
-.price:hover {
-    transition: right 0.5s;
-}
-
-.space-checkbox {
-    display: flex;
-    flex-direction: column;
-    
 }
 /** **/
 
 .menu-list {
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.div-plat h3, .div-plat p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .div-plat h3 {
+    margin: 0;
     font-size: 15px;
-    margin: 0 0 4px 0;
-    margin-bottom: 5px;
 }
 
 .div-plat p {
+    margin: 0;
     font-size: 14px;
-    margin: auto;
-}
-
-.txt-plat p {
-    display: flex;
-    justify-content: space-between;
-}
-
-.txt-plat span {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-main .bouton-commander {
 }
 
 /**BOUTON**/
-
-.commander {
-    display: inline-block;
-    border: none;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    color: white;
-    margin: auto;
-    border-radius: 30px;
-    width: 15%;
-    height: 50px;
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.commander:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    opacity: 0.9;
-    transition: all 200ms;
-    cursor: pointer;
-}
-
-
 .space {
+    text-align: center;
     padding-bottom: 2rem;
 }
 
@@ -285,12 +236,12 @@ main .bouton-commander {
     }
 
     /** 3 points a la fin de lignes  **/ 
-    .txt-plat {
+    .div-plat h3, .div-plat p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        position: relative;
     }
+    
 
     article:hover {
         cursor: pointer;

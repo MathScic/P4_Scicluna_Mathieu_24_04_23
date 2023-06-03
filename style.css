@@ -120,20 +120,18 @@ nav form i {
     border: transparent;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
-    margin-top: 1rem;
+    padding:0px 25px;
+    line-height: 45px;
     border-radius: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 35px;
+    height: 45px;
+    transition: all 200ms;  /**Créer transition sur le bouton (effet au survole)**/
     font-size: 15px;
     font-weight: 500;
-    padding-top: 1rem;
 }
 
 .bouton:hover {
     opacity: 0.9;
     cursor: pointer;
-    transition: all 200ms;  /**Créer transition sur le bouton (effet au survole)**/
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
