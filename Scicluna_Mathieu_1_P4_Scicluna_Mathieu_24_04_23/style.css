@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;1,100&family=Shrikhand&display=swap');
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    position: fixed;
+    background: #eaeaea;
+    animation: display 1s;    /**Overlay anim dure 1sec**/
+    animation-delay: 2s;  /**Pour qu'on commnce a masquer que l'overlay apres la fin de l'anim du loader**/
+    z-index: 1;    /**eviter element au dessus**/
+    animation-iteration-count: 1;      /**anim execute une seul fois**/
+    animation-fill-mode: both;       /**pour eviter répetition de l'anim **/ 
+}
+
+@keyframes display {
+    from {
+
+    }
+    to {
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-left: 5px solid #99E2D0;
+    border-right: 5px solid #FF79DA;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: spin 3s linear forwards;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        visibility: hidden;
+    }
+}
+
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    position: relative; /**Permet faire apparaitre box shadow**/
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.allignement-titre-photo {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/**Barre navigation**/
+.recherche-form input {
+    border: none; 
+    padding: 1rem 1rem;
+    background: #eaeaea;
+    font-size: 16px;
+    font-weight: bold;
+    color: #353535;
+    width: 130px;
+}
+
+.recherche-form i {
+    display: flex;
+}
+
+.recherche-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+}
+
+nav form i {
+    font-size: 1rem;
+}
+
+/**Explorer**/
+.explore {
+    text-align: center;
+    background-color: #f6f6f6;
+    height: 250px;
+    padding-top: 1rem;
+}
+
+.explore h1 {
+    margin-top: 1.5rem;
+}
+
+.explore p {
+    font-size: 1rem;
+}
+
+.bouton {
+    display: inline-block;
+    border: transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding:0px 25px;
+    line-height: 45px;
+    border-radius: 30px;
+    height: 45px;
+    transition: all 200ms;  /**Créer transition sur le bouton (effet au survole)**/
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bouton:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/**Fonctionnement**/
+
+.div-fonc {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.div-fonc li {
+    background-color: #f6f6f6;
+    padding: 1.2rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+}
+
+.div-fonc i {
+    color: #7e7e7e;
+    transition: all 200ms;
+    margin-right: 1.5rem;
+}
+
+.div-fonc i:hover {
+    color: #9356DC;
+}
+
+.steps {
+    counter-reset: counter;
+    list-style: none;
+    padding: 0 30px;
+}
+
+.steps li {
+    counter-increment: counter;
+    position: relative;
+}
+
+.steps li::before {
+    background: #9356DC;
+    color: white;
+    content: counter(counter);
+    position: absolute;
+    left: -0.5em;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+}
+
+/**Restaurants**/
+.badge {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.allignement-titre-photo h2 {
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.restaurant {
+    background-color: #eaeaea;
+}
+
+.carte-restau img {
+    width: 100%;
+    height: 175px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.carte-restau {
+    background-color: white;
+    width: auto;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carte-restau:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.carte-restau h3, .carte-restau p {
+    padding-left: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.carte-restau span i {
+    font-size: 25px;
+}
+
+.carte-restau p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coeur-accueil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 40px;
+}
+
+.grille-restaurant {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+/**Coeur anim**/
+.heartFavorite {
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(0);
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.fa-heart {
+    position: absolute;
+}
+
+.coeurcoeur-accueil {
+    position: relative;
+}
+
+.coeur-accueil:hover .heartFavorite {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/**Footer**/
+footer {
+    background-color: #353535;
+}
+
+footer p {
+    font-size: 20px;
+    color: #FFFF;
+    font-family: 'shrikhand', sans-serif;
+    padding-left: 1.5rem;
+    margin-top: 0;
+    padding-top: 1rem;
+    order: 5;
+}
+
+footer a {
+    display: flex;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    transform: scale(1.02);
+    transition: all 200ms;
+}
+
+footer i {
+    display: flex;
+    align-items: center;
+    padding-right:1rem ;
+}
+
+@media (min-width:1024px) {
+    
+    /**Explorer**/
+    .explore h1 {
+        font-size: 40px;
+    }
+
+    .explore p {
+        font-size: 18px;
+    }
+
+    .bouton {
+        margin-top: 30px;
+    }
+
+    /**Fonctionnement**/
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:3rem;
+    }
+
+    .div-fonc h2 {
+    }
+
+    .div-fonc ol {
+        width:auto;
+    }
+
+    .div-fonc li {
+        width: calc(30% - 0px);
+    }
+
+    /**Resturant**/
+    .restaurant h2 {
+    }
+
+    .restaurant {
+        margin-bottom: auto;
+    }
+
+    .grille-restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .carte-restau {
+    }
+
+    .footer-form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .recherche-form {
+
+    }
+
+    .steps {
+        
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:3rem;
+    }
+
+    .bouton {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .grille-restaurant {
+        gap: 3rem;
+    }
+
+    .steps li {
+        font-size: 14px;
+    }
+
+}
