@@ -171,6 +171,7 @@ nav form i {
 .steps li {
     counter-increment: counter;
     position: relative;
+    font-size: 14px;
 }
 
 .steps li::before {
@@ -375,31 +376,4 @@ footer i {
         align-items: center;
         margin-right: 1rem;
     }
-}
-
-@media (max-width:768px) {
-    .recherche-form {
-
-    }
-
-    .steps {
-        
-        flex-direction: row;
-        justify-content: flex-start;
-        gap:3rem;
-    }
-
-    .bouton {
-        font-size: 13px;
-        font-weight: bold;
-    }
-
-    .grille-restaurant {
-        gap: 3rem;
-    }
-
-    .steps li {
-        font-size: 14px;
-    }
-
 }

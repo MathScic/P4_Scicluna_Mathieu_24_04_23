@@ -44,6 +44,10 @@ main {
     margin: auto;
 }
 
+.menu h2 ::before {
+    padding-left: 2rem;
+}
+
 .menu h2::after {
     content:"" ;
     width: 30px;
@@ -94,6 +98,9 @@ main {
     margin-top: 0.7rem;
     font-size: 18px;
     right: 2px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.7rem;
 }
 /**/
 .align-titre span i:hover {
@@ -119,6 +126,12 @@ main {
     100% {
         transform: scale(1);
     }
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
 }
 
 .price {
@@ -234,6 +247,8 @@ article:hover {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -244,22 +259,6 @@ article:hover {
 
     .menu h2 {
         margin-left: 3rem;
-    }
-
-    h1 {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 40px;
-    }
-
-    .menu h2 ::before {
-        padding-left: 2rem;
-    }
-
-    .align-titre span i {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 0.7rem;
     }
 
     .div-plat {
