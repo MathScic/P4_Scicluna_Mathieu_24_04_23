@@ -248,7 +248,9 @@ article:hover {
         text-overflow: ellipsis;
     }
 
-
+    .div-plat {
+        max-width: 60%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -257,17 +259,8 @@ article:hover {
     /**Menu**/
 
 
-    .menu h2 {
-        margin-left: 3rem;
-    }
-
     .div-plat {
         max-width: 85%;
     }
 } 
 
-@media (max-width: 320px) {
-    .menu h2 {
-        margin-left: 1rem;
-    }
-}
