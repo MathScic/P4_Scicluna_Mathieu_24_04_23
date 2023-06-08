@@ -1,5 +1,5 @@
-p4 
+Lien Github : 
+https://github.com/MathScic/P4_Scicluna_Mathieu_24_04_23
 
--rajout max witdh section "restaurant", Fonctionnemetn... sauf footer et header. 
-ce ref au p3 
-
+Version en ligne : 
+https://mathscic.github.io/P4_Scicluna_Mathieu_24_04_23/
