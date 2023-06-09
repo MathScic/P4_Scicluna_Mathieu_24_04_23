@@ -234,7 +234,7 @@ article:hover {
 
 @media (min-width:1024px) {
     .menu {
-        max-width: 85%;
+        max-width: 70%;
     }
 
     .bouton-commander {
@@ -248,8 +248,12 @@ article:hover {
         text-overflow: ellipsis;
     }
 
+    .menu h2 {
+        max-width: 60%;
+    }
+
     .div-plat {
-        max-width: 80%;
+        max-width: 60%;
     }
 }
 
